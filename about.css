@@ -1,0 +1,615 @@
+body{
+    color: white;
+    background: black;
+}
+/*scroll*/
+/*3oredh scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  /*scroll bar */
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #2c2c2c5d; 
+  }
+   /*felsa mtee3 scroll*/
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius:24px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffb400; 
+  }
+  /*titre*/
+h1{ font-size: 100px;
+    color: rgba(255, 255, 255, 0.144);
+    text-align: center;
+    font-family: 'Amaranth', sans-serif;
+}
+
+h1::before{
+    color: white;
+    margin-left: 95px;
+    margin-top: 30px;
+    font-size: 50px;
+    letter-spacing: 0px;
+    content: "ABOUT";
+    position: absolute;
+}
+h1::after{
+    color: #ffb400;
+    margin-left: -150px;
+    margin-top: 30px;
+    font-size: 50px;
+    letter-spacing: 0px;
+    content: " ME";
+    position: absolute;
+}
+/* container mtee taswira o personal info */
+.row {
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 100px;/* bch nhabet lfooter louta */
+}
+/* container mtee image */
+.col1 {margin-top: -10px;
+    border-radius: 24px;
+    overflow: hidden;
+    width: 23%;
+    height: 430px;
+}
+.col1 img:hover{
+    transform: scale(1.2);
+}
+.col1 img{
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+    width: 100%;
+}
+.col1+.col2{
+  margin: 0% 45px;
+}
+/*container mtee personal info */
+.col2{
+
+    border-radius: 24px;
+    width: 30%;
+    padding: 5px;
+    height: 370px;
+
+}
+h3{
+    font-size: 40px ;
+    
+}
+ul
+{   
+    display: inline;
+    list-style-type: none;
+}
+ul li{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: gray;
+    margin-top: 25px;
+}
+span{ color: wheat;}
+/*footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin-left: 35%;
+    margin-right: 35%;
+    bottom: 0%;
+    
+  }
+  footer div {
+    width: 50%;
+  }
+  footer div a img{
+    width: 20%;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+  }
+  footer div a img:hover{
+    filter: invert(25%) sepia(94%) saturate(1582%) hue-rotate(357deg) brightness(101%) contrast(107%);
+    transform: scale(1.1);
+  }
+@media screen and (max-width:265px){
+h1 {
+    margin-bottom: 40px;
+    /* margin-left: 25px; */
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.144);
+    text-align: center;
+}
+	h1::before {
+    color: white;
+    margin-left: 38px;
+    margin-top: 17px;
+    font-size: 15px;
+    letter-spacing: 0px;
+    content: "ABOUT";
+    position: absolute;
+}
+	h1::after {
+    color: #ffb400;
+    margin-left: -72px;
+    margin-top: 17px;
+    font-size: 15px;
+    letter-spacing: 0px;
+    content: " ME";
+    position: absolute;
+}
+	.row {
+    width: 100%;
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+	.col1 {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+}
+	.col2 {
+    /* margin-left: 50px; */
+    /* justify-content: center; */
+    /* display: inline-flex; */
+    border-radius: 24px;
+    width: 100%;
+    padding: 5px;
+    height: 370px;
+}
+	h3 {
+    font-size: 20px;
+}
+	ul li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: gray;
+    margin-top: 25px;
+}
+	span {
+    font-size: 13px;
+    color: wheat;
+}
+}
+@media screen and (max-width:272px) and (min-width:230px){
+	h1 {
+    /* margin-left: 25px; */
+    font-size: 58px;
+    color: rgba(255, 255, 255, 0.144);
+    text-align: center;
+}
+	h1::before {
+    color: white;
+    margin-left: 50px;
+    margin-top: 17px;
+    font-size: 30px;
+    letter-spacing: 0px;
+    content: "ABOUT";
+    position: absolute;
+}
+	h1::after {
+    color: #ffb400;
+    margin-left: -83px;
+    margin-top: 17px;
+    font-size: 30px;
+    letter-spacing: 0px;
+    content: " ME";
+    position: absolute;
+}
+	.row {
+    width: 100%;
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+	.col1 {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+}
+	.col2 {
+    /* margin-left: 50px; */
+    /* justify-content: center; */
+    /* display: inline-flex; */
+    border-radius: 24px;
+    width: 100%;
+    padding: 5px;
+    height: 370px;
+}
+	h3 {
+    font-size: 20px;
+}
+	ul li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: gray;
+    margin-top: 25px;
+}
+	span {
+    font-size: 13px;
+    color: wheat;
+}
+}
+@media screen and (max-width:294px) and (min-width:273px){
+	h1 {
+    /* margin-left: 25px; */
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.144);
+    text-align: center;
+}
+	h1::before {
+    color: white;
+    margin-left: 58px;
+    margin-top: 17px;
+    font-size: 30px;
+    letter-spacing: 0px;
+    content: "ABOUT";
+    position: absolute;
+}
+	h1::after {
+    color: #ffb400;
+    margin-left: -85px;
+    margin-top: 17px;
+    font-size: 30px;
+    letter-spacing: 0px;
+    content: " ME";
+    position: absolute;
+}
+	.row {
+    width: 100%;
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+	.col1 {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+}
+	.col2 {
+    /* margin-left: 50px; */
+    /* justify-content: center; */
+    /* display: inline-flex; */
+    border-radius: 24px;
+    width: 100%;
+    padding: 5px;
+    height: 370px;
+}
+	h3 {
+    font-size: 20px;
+}
+	ul li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: gray;
+    margin-top: 25px;
+}
+	span {
+    font-size: 13px;
+    color: wheat;
+}
+}
+@media screen and (max-width:319px) and (min-width: 295px) {
+ h1 {
+    font-size: 65px;
+    color: rgba(255, 255, 255, 0.144);
+    text-align: center;
+}
+	h1::before {
+    color: white;
+    margin-left: 58px;
+    margin-top: 14px;
+    font-size: 37px;
+    letter-spacing: 0px;
+    content: "ABOUT";
+    position: absolute;
+}
+	h1::after {
+    color: #ffb400;
+    margin-left: -80px;
+    margin-top: 14px;
+    font-size: 37px;
+    letter-spacing: 0px;
+    content: " ME";
+    position: absolute;
+}
+	.row {
+    width: 100%;
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.col1 {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    border-radius: 209px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+   
+}
+	.col2{
+		display: contents;
+    border-radius: 24px;
+    width: 100%;
+    padding: 5px;
+    height: 370px;
+    margin-left: -35px;
+	}
+	h3 {
+    margin-left: 31px;
+    text-align: center;
+    font-size: 30px;
+}
+  }
+  @media screen and (max-width:358px) and (min-width: 320px) {
+ h1 {
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.144);
+    text-align: center;
+}
+	h1::before {
+    color: white;
+    margin-left: 63px;
+    margin-top: 14px;
+    font-size: 45px;
+    letter-spacing: 0px;
+    content: "ABOUT";
+    position: absolute;
+}
+	h1::after {
+    color: #ffb400;
+    margin-left: -67px;
+    margin-top: 14px;
+    font-size: 45px;
+    letter-spacing: 0px;
+    content: " ME";
+    position: absolute;
+}
+    .row {
+    width: 100%;
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+	.col1 {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    border-radius: 209px;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    
+}
+	.col2{
+		display: contents;
+    border-radius: 24px;
+    width: 100%;
+    padding: 5px;
+    height: 370px;
+    margin-left: -35px;
+	}
+	h3 {
+  
+    font-size: 30px;
+}
+ }
+@media screen and (min-width:359px) and (max-width:550px){
+	h1 {
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.144);
+    text-align: center;
+}
+	h1::before {
+    color: white;
+    margin-left: 45px;
+    margin-top: 16px;
+    font-size: 50px;
+    letter-spacing: 0px;
+    content: "ABOUT";
+    position: absolute;
+}
+	h1::after {
+    color: #ffb400;
+    margin-left: -102px;
+    margin-top: 16px;
+    font-size: 50px;
+    letter-spacing: 0px;
+    content: " ME";
+    position: absolute;
+}
+	 .row {
+    width: 100%;
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+	.col1 {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    border-radius: 209px;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+	.col2{
+		display: contents;
+    border-radius: 24px;
+    width: 100%;
+    padding: 5px;
+    height: 370px;
+	}
+	h3 {
+    display: flex;
+		justify-content: center;
+    font-size: 30px;
+}
+}
+@media screen and (min-width:551px) {
+	h1 {
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.144);
+    text-align: center;
+}
+	h1::before {
+    color: white;
+    margin-left: 26px;
+    margin-top: 15px;
+    font-size: 50px;
+    letter-spacing: 0px;
+    content: "ABOUT";
+    position: absolute;
+}
+	h1::after {
+    color: #ffb400;
+    margin-left: -128px;
+    margin-top: 15px;
+    font-size: 50px;
+    letter-spacing: 0px;
+    content: " ME";
+    position: absolute;
+}
+		 .row {
+    width: 100%;
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+	.col1 {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+}
+	.col2{
+		justify-content: center;
+    display: grid;
+    border-radius: 24px;
+    width: 100%;
+    padding: 5px;
+    height: 370px;
+	}
+	h3 {
+    display: flex;
+		justify-content: center;
+    font-size: 30px;
+}
+}
+@media screen and (min-width:600px) and (max-width:1024px){
+	.col2{
+		display: block;
+    border-radius: 24px;
+    width: 100%;
+    padding: 5px;
+    height: 370px;
+	}
+		.col1 {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+	ul {
+    justify-content: center;
+    display: grid;
+    list-style-type: none;
+}
+}
+@media screen and (min-width:1025px) {
+	h1{
+		margin-bottom: 100px;
+		font-size: 100px;
+	}
+	h1::before {
+    color: white;
+    margin-left: 97px;
+    margin-top: 25px;
+    font-size: 50px;
+    letter-spacing: 0px;
+    content: "ABOUT";
+    position: absolute;
+}
+	h1::after {
+    color: #ffb400;
+    margin-left: -136px;
+    margin-top: 25px;
+    font-size: 50px;
+    letter-spacing: 0px;
+    content: " ME";
+    position: absolute;
+}
+	/*zedetha padding bch njibha fl west m9bla taswira*/
+	.col2{
+	display: block;
+    border-radius: 24px;
+    width: 30%;
+
+	padding-top: 90px;
+    height: 460px;
+	}
+	.col1 {width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    border-radius: 24px;
+    overflow: hidden;
+    height: 570px;
+}	
+	/* grid bch tlemehom maa baadhhom lena */
+	ul {
+    justify-content: center;
+		display: grid;
+    list-style-type: none;
+}
+}
